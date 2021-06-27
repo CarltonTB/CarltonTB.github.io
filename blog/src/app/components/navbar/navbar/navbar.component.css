@@ -1,0 +1,13 @@
+.navbar-spacer {
+  margin-left: 7rem;
+  margin-right: 7rem;
+}
+
+.navbar-flex {
+  flex: 1 1 auto;
+}
+
+.home-link {
+    color: inherit;
+    text-decoration: inherit;
+}
