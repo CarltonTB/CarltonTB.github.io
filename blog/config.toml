@@ -67,7 +67,7 @@ publishdir = "../docs"
 
     [languages.en.menu]
       [[languages.en.menu.main]]
-        identifier = "about"
+        identifier = "index"
         name = "About"
         url = "/about"
       [[languages.en.menu.main]]
