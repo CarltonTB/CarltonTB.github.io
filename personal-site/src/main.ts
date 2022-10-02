@@ -39,6 +39,9 @@ const createCubeField = () => {
 createCubeField();
 
 const flyingControls = new FlyControls(camera, renderer.domElement);
+flyingControls.dragToLook = false;
+flyingControls.rollSpeed = 0.003;
+flyingControls.movementSpeed = 0.5;
 
 camera.position.z = 10;
 
@@ -48,7 +51,7 @@ const animate = () => {
     cube.rotation.x += 0.01;
     cube.rotation.y += 0.01;
   })
-  flyingControls.update(0.5);
+  flyingControls.update(1);
   renderer.render(scene, camera)
 }
 animate();
