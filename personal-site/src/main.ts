@@ -5,4 +5,4 @@ const getYearsOfExperience = (): string => {
 }
 
 document.getElementById('yearsOfExperience')!.textContent = getYearsOfExperience();
-export {}
+export { }
