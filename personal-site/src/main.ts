@@ -1,7 +1,8 @@
 const getYearsOfExperience = (): string => {
-  const fiveYearsDate = new Date(2022, 10, 1);
-  const years: number = 5 + (new Date().getFullYear() - fiveYearsDate.getFullYear());
-  return String(years);
+  const startYear = 2017;
+  const currentYear = new Date().getFullYear();
+  const yoe: number = currentYear - startYear;
+  return `${yoe} years`;
 }
 
 document.getElementById('yearsOfExperience')!.textContent = getYearsOfExperience();

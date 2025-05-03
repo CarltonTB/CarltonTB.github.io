@@ -9,27 +9,51 @@
   box-sizing: border-box;
 }
 
+/* 
+* Colors are from the catppuccin frappe palette: https://catppuccin.com/palette/
+*/
+:root {
+  --main-bg-color: #303446;
+  --section-bg-color: #414559;
+  --text-color: #c6d0f5;
+  --link-hover-color: #8caaee;
+  --section-title-color: #e78284;
+  --subsection-title-color: #a6d189;
+  --company-name-color: #81c8be;
+  --yoe-color: #ef9f76;
+}
+
+.content {
+  /* fill 90% of the viewport but never exceed 120 characters */
+  width: min(90%, 120ch);
+  margin-inline: auto;
+}
+
+.yoe {
+  color: var(--yoe-color);
+}
+
 .bg-main {
-  background-color: #24283b;
+  background-color: var(--main-bg-color);
 }
 
 .section-header {
-  color: #9d7cd8;
+  color: var(--section-title-color);
 }
 
 .subsection-header {
-  color: #c3e88d;
+  color: var(--subsection-title-color);
 }
 
 .subsection-content h4 {
-  color: #7aa2f7;
+  color: var(--company-name-color);
   margin-top: 0.5em;
   margin-bottom: 0.5em;
 }
 
 body {
   font-family: monospace;
-  color: #c0caf5;
+  color: var(--text-color);
 }
 
 p,
@@ -44,17 +68,17 @@ h3 {
 
 @keyframes link-hover {
   from {
-    color: #a9b1d6;
+    color: var(--text-color);
   }
 
   to {
-    color: #3d59a1;
+    color: var(--link-hover-color);
   }
 }
 
 
 a {
-  color: #a9b1d6;
+  color: var(--text-color);
   text-decoration: none;
 }
 
@@ -74,7 +98,7 @@ ul li {
 }
 
 .subsection {
-  background-color: #3b4261;
+  background-color: var(--section-bg-color);
   border-radius: 5px;
   margin-bottom: 10px;
 }
@@ -122,11 +146,6 @@ footer {
   height: 40px;
   border-top: 2px solid #c0caf5;
 }
-
-.footer-link {
-  color: #3d59a1;
-}
-
 
 .footer-content {
   margin-top: 10px;
