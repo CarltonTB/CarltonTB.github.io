@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" href="/src/style.css">
+        <link rel="icon" type="image/png" sizes="32x32" href="/chart.png"/>
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>{{title}} - Carlton Brady</title>
+        <!-- Prism.js for syntax highlighting -->
+        <link href="/prism-catppuccin-frappe.css" rel="stylesheet" />
+    </head>
+    <body class="bg-main">
+        <h1 class="name-title">Carlton Brady</h1>
+        <nav class="navbar">
+            <ul>
+                <li><a href="/">About</a></li>
+                <li>|</li>
+                <li><a href="/blog/posts.html">Blog</a></li>
+                <li>|</li>
+                <li><a href="https://github.com/CarltonTB">GitHub</a></li>
+                <li>|</li>
+                <li><a href="https://www.linkedin.com/in/carltontb/">Linkedin</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h1>{{title}}</h1>
+            <div class="post-meta">
+                <time datetime="{{date}}">{{formattedDate}}</time>
+            </div>
+            <div class="post-content">
+                {{content}}
+            </div>
+        </main>
+        <!-- Prism.js scripts -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-typescript.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-javascript.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-bash.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-json.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-yaml.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-markup.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-css.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-rust.min.js"></script>
+    </body>
+</html>

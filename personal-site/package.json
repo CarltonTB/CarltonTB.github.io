@@ -5,10 +5,14 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "node scripts/build-blog.js && tsc && vite build && npm run copy-blog",
+    "build-blog": "node scripts/build-blog.js",
+    "copy-blog": "cp blog/*.html ../docs/blog/ && cp blog/posts-manifest.json ../docs/blog/",
     "preview": "vite preview"
   },
   "devDependencies": {
+    "gray-matter": "^4.0.3",
+    "marked": "^16.0.0",
     "typescript": "^4.6.4",
     "vite": "^3.1.0"
   }

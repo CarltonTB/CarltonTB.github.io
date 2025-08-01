@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" href="/src/style.css">
+        <link rel="icon" type="image/png" sizes="32x32" href="/chart.png"/>
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Why I like Vim - Carlton Brady</title>
+        <!-- Prism.js for syntax highlighting -->
+        <link href="/prism-catppuccin-frappe.css" rel="stylesheet" />
+    </head>
+    <body class="bg-main">
+        <h1 class="name-title">Carlton Brady</h1>
+        <nav class="navbar">
+            <ul>
+                <li><a href="/">About</a></li>
+                <li>|</li>
+                <li><a href="/blog/posts.html">Blog</a></li>
+                <li>|</li>
+                <li><a href="https://github.com/CarltonTB">GitHub</a></li>
+                <li>|</li>
+                <li><a href="https://www.linkedin.com/in/carltontb/">Linkedin</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h1>Why I like Vim</h1>
+            <div class="post-meta">
+                <time datetime="Thu Jul 31 2025 20:00:00 GMT-0400 (Eastern Daylight Time)">July 31, 2025</time>
+            </div>
+            <div class="post-content">
+                <p>Roughly one year ago I <a href="https://github.com/CarltonTB/kickstart.nvim">forked kickstart.nvim</a> and began the process of switching to Neovim 
+for my software dev work. A combination of boredom, desire to be a cooler programmer, and interest in understanding why the editor has such a zealous
+userbase motivated my switch. TLDR; it was worth it and I highly recommend giving Neovim a try for anyone tired of JetBrains editors and VS Code.</p>
+<h3>Programming is more fun with Vim motions</h3>
+<p>The number one benefit of Vim is Vim motions, which are a composable set of text navigation and editing commands.
+The best way to start the process of learning them is to just open your terminal and enter:</p>
+<pre><code>vimtutor
+</code></pre>
+<p>Most popular editors have a Vim plugin or extension that lets you use Vim motions without actually using Vim or Neovim as your editor, so that&#39;s another good way to start learning 
+before you make a full editor switch.</p>
+<p>Vim motions are awkward at first, but if you push through the pain and force yourself to use them for a couple of weeks, they will stick in your brain. 
+It&#39;ll make using a mouse for text editing feel clunky in comparison.</p>
+<p>Vim motions make programming more enjoyable for me because they add another dimension of skill. 
+Implementing relatively routine features feels more rewarding with Vim because of the text editing metagame. 
+Instead of just trying to figure out the right code to put in the editor, it&#39;s also about using an efficient sequence of keys to do it.</p>
+<h3>Snappier experience</h3>
+<p>After nearly a decade of using JetBrains IDEs like Intellij and PyCharm, I barely noticed the sluggish, bloated experience. 
+Switching to Neovim felt like playing a game at 144 FPS after playing a 30 FPS version of the same game. 
+It&#39;s tough to go back from a super responsive experience in any type of software.</p>
+<h3>Neovim has nice things too</h3>
+<p>Neovim doesn&#39;t have to be barebones. Getting the editor just the way you want can be a chore, but it&#39;s not too bad 
+if you build on a reasonable starter configuration like <a href="https://github.com/nvim-lua/kickstart.nvim">kickstart.nvim</a>.
+There&#39;s <a href="https://en.wikipedia.org/wiki/Language_Server_Protocol">LSP</a> features like go to definition, autocomplete suggestions, and refactoring for any language that isn&#39;t obscure.
+There&#39;s even a GitHub Copilot plugin for Neovim, so you don&#39;t have to go without AI autocomplete if that&#39;s your thing. 
+You can get just the features you want and nothing else.</p>
+<h3>Less mouse and trackpad usage is better for my hand</h3>
+<p>As I&#39;ve gotten older, using a mouse or trackpad too much has started to make my right hand ache and feel tired.
+With Neovim and tmux combined, I have a nice terminal-based, keyboard-centric workflow that saves my hand and lets me comfortably work longer.</p>
+<h3>Conclusion</h3>
+<p>You can make a strong argument that the skill of writing and editing code is dramatically less valuable in a world with AI coding tools like Cursor and Claude Code. 
+In this world, being a wizard with Vim motions can seem like an even more pointless skill. I use Claude Code every day. It&#39;s a force multiplier but it&#39;s clear that human coding isn&#39;t obsolete quite yet. In the meantime, it&#39;s worth keeping those human coding skills sharp.</p>
+<p>I think it&#39;s worth giving Vim an honest try for any developer. Even if you don&#39;t switch for all of your dev work, it&#39;s still good to be proficient with Vim in case
+you find yourself ssh&#39;d into a Linux server needing to edit a file.</p>
+
+            </div>
+        </main>
+        <!-- Prism.js scripts -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-typescript.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-javascript.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-bash.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-json.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-yaml.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-markup.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-css.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-rust.min.js"></script>
+    </body>
+</html>
