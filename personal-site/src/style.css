@@ -9,21 +9,22 @@
     box-sizing: border-box;
 }
 
-html {
-    font-size: 13px;
-}
 
 /* 
 * Colors are from the catppuccin frappe palette: https://catppuccin.com/palette/
 */
 :root {
     --main-bg-color: #303446;
-    --section-bg-color: #414559;
+    --grey-bg-color: #414559;
     --text-color: #c6d0f5;
-    --link-hover-color: #8caaee;
-    --section-title-color: #8caaee;
-    --subsection-title-color: #81c8be;
-    --company-name-color: #a6d189;
+    --link-color: #8caaee;
+    --section-title-color: #81c8be;
+    --subsection-title-color: #a6d189;
+}
+
+html {
+    font-size: 13px;
+    color: var(--text-color);
 }
 
 .bg-main {
@@ -31,7 +32,6 @@ html {
 }
 
 .subsection-content h4 {
-    color: var(--company-name-color);
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
 }
@@ -73,33 +73,29 @@ h1 {
     margin-block-end: 1rem;
 }
 
-h1 {
+h1,
+h2,
+h3 {
     color: var(--section-title-color);
 }
 
 h3 {
     margin-block-end: 1rem;
-    color: var(--subsection-title-color);
-}
-
-@keyframes link-hover {
-    from {
-        color: var(--text-color);
-    }
-
-    to {
-        color: var(--link-hover-color);
-    }
 }
 
 
 a {
-    color: var(--text-color);
+    color: var(--link-color);
+    transition: transform 0.2s ease;
     text-decoration: none;
+    display: inline-block;
+    transform-origin: center;
 }
 
 a:hover {
-    animation: link-hover 0.3s forwards;
+    transform: scale(1.05);
+    text-decoration: underline;
+    text-underline-offset: 0.2rem;
 }
 
 
@@ -114,16 +110,12 @@ ul li {
 }
 
 .subsection {
-    background-color: var(--section-bg-color);
-    border-radius: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
 }
 
 .subsection-content {
-    padding-right: 1rem;
-    padding-bottom: 1rem;
-    padding-left: 1rem;
-    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
 }
 
 @keyframes fade-in {
@@ -143,6 +135,8 @@ main {
     /* fill 95% of the viewport but never exceed 120 characters */
     width: min(95%, 120ch);
     margin-inline: auto;
+    padding-right: 1rem;
+    padding-left: 1rem;
 }
 
 .name-title {
@@ -166,7 +160,7 @@ main {
 .post-content h1,
 .post-content h2,
 .post-content h3 {
-    color: var(--subsection-title-color);
+    color: var(--section-title-color);
     margin-top: 2rem;
     margin-bottom: 1rem;
 }
@@ -182,14 +176,14 @@ main {
 }
 
 .post-content code {
-    background-color: var(--section-bg-color);
+    background-color: var(--grey-bg-color);
     padding: 0.2rem 0.4rem;
     border-radius: 3px;
     font-family: monospace;
 }
 
 .post-content pre {
-    background-color: var(--section-bg-color);
+    background-color: var(--grey-bg-color);
     padding: 1rem;
     border-radius: 5px;
     overflow-x: auto;
@@ -201,24 +195,10 @@ main {
     padding: 0;
 }
 
-.post-content a {
-    color: var(--link-hover-color);
-    text-decoration: underline;
-    text-underline-offset: 2px;
-    text-decoration-thickness: 1px;
-    transition: all 0.2s ease;
-}
-
-.post-content a:hover {
-    text-decoration-thickness: 2px;
-    opacity: 0.9;
-}
-
-
 .post-preview {
     margin-bottom: 2rem;
     padding-bottom: 2rem;
-    border-bottom: 1px solid var(--section-bg-color);
+    border-bottom: 1px solid var(--grey-bg-color);
 }
 
 .post-preview:last-child {
@@ -227,15 +207,6 @@ main {
 
 .post-preview h2 {
     margin-bottom: 0.5rem;
-}
-
-.post-preview h2 a {
-    color: var(--section-title-color);
-    text-decoration: none;
-}
-
-.post-preview h2 a:hover {
-    color: var(--link-hover-color);
 }
 
 .post-preview time {
