@@ -130,7 +130,6 @@ ul li {
 
 main {
     animation: fade-in 0.5s ease-in;
-    overflow-y: scroll;
     margin-bottom: 40px;
     /* fill 95% of the viewport but never exceed 120 characters */
     width: min(95%, 120ch);
