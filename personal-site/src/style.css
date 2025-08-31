@@ -36,16 +36,6 @@ html {
     margin-bottom: 0.5rem;
 }
 
-@keyframes slide-in {
-    from {
-        transform: translateX(-100vw);
-    }
-
-    to {
-        transform: translateX(0);
-    }
-}
-
 nav {
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -154,67 +144,67 @@ main {
 
 .post-content {
     line-height: 1.6;
-}
 
-.post-content h1,
-.post-content h2,
-.post-content h3 {
-    color: var(--section-title-color);
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-}
+    & h1,
+    & h2,
+    & h3 {
+        color: var(--section-title-color);
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
 
-.post-content p {
-    margin-bottom: 1rem;
-}
+    & p {
+        margin-bottom: 1rem;
+    }
 
-.post-content ul,
-.post-content ol {
-    margin-left: 2rem;
-    margin-bottom: 1rem;
-}
+    & ul,
+    & ol {
+        margin-left: 2rem;
+        margin-bottom: 1rem;
+    }
 
-.post-content code {
-    background-color: var(--grey-bg-color);
-    padding: 0.2rem 0.4rem;
-    border-radius: 3px;
-    font-family: monospace;
-}
+    & code {
+        background-color: var(--grey-bg-color);
+        padding: 0.2rem 0.4rem;
+        border-radius: 3px;
+        font-family: monospace;
+    }
 
-.post-content pre {
-    background-color: var(--grey-bg-color);
-    padding: 1rem;
-    border-radius: 5px;
-    overflow-x: auto;
-    margin-bottom: 1rem;
-}
+    & pre {
+        background-color: var(--grey-bg-color);
+        padding: 1rem;
+        border-radius: 5px;
+        overflow-x: auto;
+        margin-bottom: 1rem;
 
-.post-content pre code {
-    background-color: transparent;
-    padding: 0;
+        & code {
+            background-color: transparent;
+            padding: 0;
+        }
+    }
 }
 
 .post-preview {
     margin-bottom: 2rem;
     padding-bottom: 2rem;
     border-bottom: 1px solid var(--grey-bg-color);
-}
 
-.post-preview:last-child {
-    border-bottom: none;
-}
+    &:last-child {
+        border-bottom: none;
+    }
 
-.post-preview h2 {
-    margin-bottom: 0.5rem;
-}
+    & h2 {
+        margin-bottom: 0.5rem;
+    }
 
-.post-preview time {
-    color: var(--text-color);
-    opacity: 0.8;
-    font-size: 0.9rem;
-}
+    & time {
+        color: var(--text-color);
+        opacity: 0.8;
+        font-size: 0.9rem;
+    }
 
-.post-preview p {
-    margin-top: 0.5rem;
-    color: var(--text-color);
+    & p {
+        margin-top: 0.5rem;
+        color: var(--text-color);
+    }
 }

@@ -9,6 +9,7 @@ export default defineConfig({
     base: '/',
     build: {
         outDir: '../docs',
+        target: 'esnext',
         rollupOptions: {
             input: {
                 main: 'index.html'
@@ -44,17 +45,17 @@ export default defineConfig({
                 // Copy built CSS to /style.css after build
                 const docsDir = path.resolve(__dirname, '../docs');
                 const indexPath = path.join(docsDir, 'index.html');
-                
+
                 // Read index.html to find the correct CSS file
                 if (fs.existsSync(indexPath)) {
                     const indexContent = fs.readFileSync(indexPath, 'utf-8');
                     const cssMatch = indexContent.match(/href="\/assets\/(.*?\.css)"/);
-                    
+
                     if (cssMatch && cssMatch[1]) {
                         const cssFile = cssMatch[1];
                         const sourcePath = path.join(docsDir, 'assets', cssFile);
                         const destPath = path.join(docsDir, 'style.css');
-                        
+
                         if (fs.existsSync(sourcePath)) {
                             fs.copyFileSync(sourcePath, destPath);
                             console.log(`Copied ${cssFile} to style.css`);
