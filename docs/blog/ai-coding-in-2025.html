@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" href="/style.css">
+        <link rel="icon" type="image/png" sizes="32x32" href="/chart.png"/>
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>AI Coding in 2025 - Carlton Brady</title>
+        <!-- Prism.js for syntax highlighting -->
+        <link href="/prism-catppuccin-frappe.css" rel="stylesheet" />
+    </head>
+    <body class="bg-main">
+        <h1 class="name-title">Carlton Brady</h1>
+        <nav class="navbar">
+            <ul>
+                <li><a href="/">About</a></li>
+                <li>|</li>
+                <li><a href="/blog/posts.html">Blog</a></li>
+                <li>|</li>
+                <li><a href="https://github.com/CarltonTB">GitHub</a></li>
+                <li>|</li>
+                <li><a href="https://www.linkedin.com/in/carltontb/">Linkedin</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h1>AI Coding in 2025</h1>
+            <div class="post-meta">
+                <time datetime="Sat Nov 08 2025 19:00:00 GMT-0500 (Eastern Standard Time)">November 8, 2025</time>
+            </div>
+            <div class="post-content">
+                <p>The progression of AI coding tools in the past 2 years has been dramatic. I&#39;ve gone from using GPT-4 in ChatGPT along with GitHub Copilot autocomplete
+to using coding agents powered by Claude Sonnet 4.5 and GPT-5-Codex. The jump in usefulness between these two stages was huge, but it still feels like the early
+days of this technology in late 2025. Along the way my thoughts on these tools have evolved quite a bit. </p>
+<h3>Skill atrophy from AI is a real danger</h3>
+<p>Initially I felt like Copilot autocomplete was a clear win, helping me through boilerplate code and saving me keystrokes. 
+Over time I started to notice my typing and text manipulation skills with vim motions getting worse, which concerned me. I used Cursor as my editor for a couple of months,
+and was blown away by the Cursor Tab feature, but the text manipulation skill atrophy was even worse than when I used Copilot autocomplete. 
+Cursor Tab slowly started to become more of an annoyance and distraction. 
+Eventually I came to the conclusion that using Neovim without any AI autocomplete gave me the best flow experience while keeping my skills sharp.
+Anecdotally the increased enjoyment and flow outweighs any productivity gains from using Copilot autocomplete or Cursor Tab, because I can stay focused and work for longer
+if it&#39;s easy to get into the flow. At this time I was still using AI significantly, just outside of my editor in the form of the o3 model in ChatGPT.</p>
+<h3>Coding agents only became truly useful in Q2 2025</h3>
+<p>During my time using Cursor as my editor, I gave agent mode with Claude Sonnet 3.5 a significant trial. 
+Overall it was mostly not useful for my daily work in a large, 10 year old Python and TypeScript codebase. It was able to complete some basic features that followed well established patterns in the codebase, but made frequent mistakes and had an inconsistent ability to explore and understand the codebase. My takeaway at the time was that coding agents weren&#39;t quite useful yet.</p>
+<p>Fast forward to the general release of Claude Code along with Claude Sonnet 4 in May of 2025, and my opinion changed. That was the first time I felt like the models had crossed the threshold into being genuinely useful as coding assistants in a large codebase, albeit mostly for simple bugfixes, writing tests, prototyping, basic refactoring, and features that followed known patterns. This stage was the first time I could genuinely delegate non-trivial work to a coding agent and have a reasonable chance of it completing the task in a way that was a few revisions away from being mergeable.</p>
+<p>Here in November of 2025, I&#39;m using Claude Code with Sonnet 4.5 as my primary coding agent along with Neovim as my editor without any AI autocomplete. 
+My philosophy is that either I should be fully driving, or an agent should be driving with me guiding and reviewing.
+This setup keeps my skills sharp and lets me stay in the flow when I&#39;m coding something an agent would struggle with, while also giving me the option to delegate tasks to an agent that it has a good chance of completing successfully without excessive handholding.</p>
+<h3>Software engineering skills are just as important as ever</h3>
+<p>I consider myself bullish on AI coding agents, but as it stands I don&#39;t think the profession of software engineering is forever changed (yet).
+The main reason being that software engineering skills are required in order to use coding agents well, so the skills are at least as important as before the advent of coding agents.
+I do think it&#39;s true that the relative importance of particular software engineering skills has changed. For example, the importance of raw programming cleverness has probably gone down since we have LLMs that are on the level of top tier competitive programmers. But the importance of code review and architecture skills have likely gone up. 
+Of course this change isn&#39;t necessarily true in all areas of software engineering; it&#39;s a massive profession with wild variation in the type of work engineers are doing, but I think it&#39;s true for the majority of web development work being done with popular programming languages and frameworks.</p>
+<p><a href="https://www.youtube.com/watch?v=LCEmiRjPEtQ">Andrej Karpathy gave a talk</a> in June of 2025 that referred to this as the decade of AI agents, rather than the year of AI agents, and I largely agree. Coding agents right now feel like this super promising alpha build of a video game, but the work to go from that to a final, polished product is always deceptively large.</p>
+<p>I think humans will be writing code for a long time, but the spectrum of the type of software that exists will be wider. Imagine a spectrum from mass-produced, lower quality, simple software to complex, advanced, high-quality artisan software. Coding agents unlock a lot more supply in the low quality to medium quality range of that spectrum. I think this is great because we&#39;ll have abundant software, and not all software needs to be the equivalent of a Michelin-star meal. But there will still be plenty of demand for software in that highest quality tier, which will require human genius, creativity, and sensibility for as long as AGI eludes us.</p>
+
+            </div>
+        </main>
+        <!-- Prism.js scripts -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-typescript.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-javascript.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-bash.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-json.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-yaml.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-markup.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-css.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-rust.min.js"></script>
+    </body>
+</html>
