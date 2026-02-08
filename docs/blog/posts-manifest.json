@@ -2,14 +2,16 @@
   {
     "title": "AI Coding in 2025",
     "slug": "ai-coding-in-2025",
-    "date": "2025-11-09T00:00:00.000Z",
+    "date": "2025-11-09",
+    "formattedDate": "November 9, 2025",
     "description": "My thoughts on programming with LLM-powered development tools in November of 2025.",
     "path": "/blog/ai-coding-in-2025.html"
   },
   {
     "title": "Why I like Vim",
     "slug": "why-i-like-vim",
-    "date": "2025-08-01T00:00:00.000Z",
+    "date": "2025-08-01",
+    "formattedDate": "August 1, 2025",
     "description": "Reflections on switching to Neovim after a year.",
     "path": "/blog/why-i-like-vim.html"
   }

@@ -26,5 +26,4 @@ CLAUDE.md
 
 # Generated blog files
 blog/*.html
-!blog/posts.html
 blog/posts-manifest.json

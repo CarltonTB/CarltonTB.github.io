@@ -4,16 +4,16 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "node scripts/build-blog.js && tsc && vite build && npm run copy-blog",
+    "dev": "node scripts/build-blog.js && vite",
+    "build": "node scripts/build-blog.js && tsc && rm -rf ../docs/assets && vite build && npm run copy-blog",
     "build-blog": "node scripts/build-blog.js",
-    "copy-blog": "cp blog/*.html ../docs/blog/ && cp blog/posts-manifest.json ../docs/blog/",
+    "copy-blog": "mkdir -p ../docs/blog && cp blog/*.html ../docs/blog/ && cp blog/posts-manifest.json ../docs/blog/",
     "preview": "vite preview"
   },
   "devDependencies": {
     "gray-matter": "^4.0.3",
     "marked": "^16.0.0",
-    "typescript": "^4.6.4",
-    "vite": "^3.1.0"
+    "typescript": "^5.9.3",
+    "vite": "^6.4.1"
   }
 }
