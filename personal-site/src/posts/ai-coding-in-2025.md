@@ -1,5 +1,5 @@
 ---
-title: AI Coding in 2025
+title: AI Coding in November 2025
 date: 2025-11-09
 description: My thoughts on programming with LLM-powered development tools in November of 2025.
 ---
