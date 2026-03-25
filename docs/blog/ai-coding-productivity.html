@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" href="/style.css">
+        <link rel="icon" type="image/png" sizes="32x32" href="/chart.png"/>
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Coding Agents and Productivity - Carlton Brady</title>
+        <!-- Prism.js for syntax highlighting -->
+        <link href="/prism-catppuccin-frappe.css" rel="stylesheet" />
+    </head>
+    <body class="bg-main">
+        <h1 class="name-title">Carlton Brady</h1>
+        <nav class="navbar">
+            <ul>
+                <li><a href="/">About</a></li>
+                <li>|</li>
+                <li><a href="/blog/posts.html">Blog</a></li>
+                <li>|</li>
+                <li><a href="https://github.com/CarltonTB">GitHub</a></li>
+                <li>|</li>
+                <li><a href="https://www.linkedin.com/in/carltontb/">Linkedin</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h1>Coding Agents and Productivity</h1>
+            <div class="post-meta">
+                <time datetime="2026-03-24">March 24, 2026</time>
+            </div>
+            <div class="post-content">
+                <p>Measuring the productivity of a software engineer or software engineering team is infamously difficult. Much ink has been spilled debating the topic.
+These days the debate has morphed into an argument about how coding agents and other LLM-powered dev tools are affecting the productivity of software engineers.
+At first blush it seems like an absurd thing to argue over, because if we don&#39;t know how to measure productivity in software engineering, then how could we possibly determine 
+what the effects of a particular tool are on productivity? Still, it&#39;s a critically important question and it&#39;s worth discussing even if quantitative measurement is intractable.</p>
+<p>AI has tempted people to revert back to crude proxies for productivity like lines of code and pull requests merged. 
+These types of measures are exactly what AI companies would prefer to be used, because they capture precisely what LLMs are best at: generating stuff.
+However, before LLMs, the consensus in our industry was that lines of code, tickets closed, and PRs merged were terrible measures of productivity, and they create poor incentives
+for engineers (especially if these measures <a href="https://en.wikipedia.org/wiki/Goodhart%27s_law">become a target</a>).</p>
+<h3>Where could the productivity boost come from?</h3>
+<p>There are lots of hypotheses you might have about how AI tools increase productivity. These are the main ones that come to mind for me:</p>
+<p><em>LLMs expand the set of things that can be automated with software</em></p>
+<p>This seems obviously true, but it&#39;s important to note that being automated with an LLM is not exactly the same as being automated with good old fashioned deterministic software.
+How low does the error rate have to be before something is considered automated? If the error rate is high enough, then human review is still required, which destroys most 
+of the theoretical productivity boost.</p>
+<p><em>Coding agents can complete some tasks faster and better than the human programmer that would have done them pre-LLMs</em></p>
+<p>This seems true, especially for well-specified tasks in popular programming languages. There are definitely productivity gains to be had on drudgery and toil as well.</p>
+<p><em>Coding agents introduce a low cost supply of software engineering labor</em></p>
+<p>This is partially true right now, but coding agents cannot automate software engineering end-to-end, and the cost may rise in the future when tokens are no longer being subsidized.</p>
+<p>With Opus 4.6-class LLMs, I think it looks more like a moderate productivity increase from improved developer tooling rather than a full phase shift in how software is made.
+Continued advances in LLMs or AI generally could change that, but still it&#39;s hard to get around the bottleneck of deciding what is useful to build, specifying it in detail, and validating that the software actually solves the problem.</p>
+
+            </div>
+        </main>
+        <!-- Prism.js scripts -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-typescript.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-javascript.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-bash.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-json.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-yaml.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-markup.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-css.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-rust.min.js"></script>
+    </body>
+</html>

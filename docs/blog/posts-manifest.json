@@ -1,5 +1,13 @@
 [
   {
+    "title": "Coding Agents and Productivity",
+    "slug": "ai-coding-productivity",
+    "date": "2026-03-24",
+    "formattedDate": "March 24, 2026",
+    "description": "Musings on the difficulty of measuring the effects of AI coding agents on productivity in software engineering.",
+    "path": "/blog/ai-coding-productivity.html"
+  },
+  {
     "title": "AI Coding in March 2026",
     "slug": "ai-coding-in-2026",
     "date": "2026-03-08",
